@@ -31,10 +31,10 @@ bomb_img = pygame.transform.scale(bomb_img, (65, 65))  # Bomb size changed to 65
 
 # Game variables
 cat_x = 50
-cat_y = window_height // 2
-gravity = 0.25
+cat_y = window_height // 1
+gravity = 0.80
 cat_velocity = 0
-cat_flap = -5
+cat_flap = -10
 
 # Settings
 meow_enabled = True
@@ -46,7 +46,7 @@ distance = 0
 # Bomb variables
 bombs = []
 bomb_gap = 200  # Gap between each bomb (distance to the next bomb)
-bomb_speed = 4
+bomb_speed = 5
 bomb_frequency = 25  # Frequency at which bombs are created
 
 def draw_text(text, font, color, surface, x, y):
